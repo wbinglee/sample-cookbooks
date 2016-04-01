@@ -1,5 +1,5 @@
 template "/tmp/cwlogs.cfg" do
-  cookbook "logs"
+  cookbook "logschef12"
   source "cwlogs.cfg.erb"
   owner "root"
   group "root"
