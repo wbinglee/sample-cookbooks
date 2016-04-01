@@ -5,7 +5,7 @@ template "/tmp/cwlogs.cfg" do
   group "root"
   mode 0644
   variables(
-    :instance => search("aws_opsworks_instance").first,
+    :instance => search("aws_opsworks_instance", "self:true").first,
     :stack => search("aws_opsworks_stack").first
   )
 end
