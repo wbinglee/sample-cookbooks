@@ -6,6 +6,6 @@ template "/tmp/cwlogs.cfg" do
   mode 0644
   variables(
     :instance => search("aws_opsworks_instance").first,
-    :stack => search("aws_opsworks_stack").first['name']
+    :stack => search("aws_opsworks_stack").first
   )
 end
